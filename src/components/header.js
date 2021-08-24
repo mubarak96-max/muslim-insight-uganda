@@ -10,7 +10,7 @@ const Header = () => (
   <header>
     <StaticImage
       src="../images/quran.png"
-      width={200}
+      width={150}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="Quran mu Luganda"

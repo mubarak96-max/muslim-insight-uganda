@@ -15,6 +15,7 @@ const query = graphql`
           }
         }
         title
+        index
       }
     }
   }
@@ -22,19 +23,23 @@ const query = graphql`
 
 const IndexPage = () => {
   const data = useStaticQuery(query)
-  console.log(data)
+  const byIndex = data.allContentfulSurah.nodes.slice(0)
+  byIndex.sort(function(a,b){
+    return a.index - b.index
+  })
+
   return (
     <Layout>
       <Seo title="Home" />
-      {data.allContentfulSurah.nodes.map(surah => {
-        console.log(surah)
+      {byIndex.map(surah => {
+       
         const {
           title,
           audio: {
             file: { url },
           },
         } = surah
-        console.log(url)
+        
         return <Surah title={title} source={url} />
       })}
     </Layout>

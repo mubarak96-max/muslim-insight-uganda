@@ -2,14 +2,17 @@ import React from "react"
 import { FaPlay, FaDownload } from "react-icons/fa"
 
 const Surah = ({ title, source }) => {
+  let audio = new Audio(source)
+
+  function playSound() {
+    audio.play()
+  }
+
   return (
     <article className="surah">
       <h3>{title}</h3>
-
-      <audio src={source}></audio>
-
-      <div className="listen">
-        <button>
+<div className="listen">
+        <button onClick={playSound}>
           Play
           <FaPlay className="listen-icon" />
         </button>

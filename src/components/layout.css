@@ -1,15 +1,10 @@
 html {
-  font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
+  margin: 0 1rem;
   font-family: georgia, serif;
-  font-weight: normal;
   word-wrap: break-word;
 }
 
@@ -21,20 +16,25 @@ header {
 }
 
 header h1 {
-  font-size: 0.7rem;
-  color: rebeccapurple;
+  font-size: 1.4rem;
+  color: rgb(27, 116, 10);
+  font-style: italic;
 }
 
 .surah h3 {
   color: rebeccapurple;
+  font-size: 1rem;
 }
 
-.listen button {
+.listen button,
+.listen a {
   margin-left: 1rem;
   border: none;
   outline: none;
   color: orangered;
   background: none;
+  font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .listen-icon {
