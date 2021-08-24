@@ -1,0 +1,42 @@
+html {
+  font: 112.5%/1.45em georgia, serif, sans-serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: georgia, serif;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 0.7rem;
+  color: rebeccapurple;
+}
+
+.surah h3 {
+  color: rebeccapurple;
+}
+
+.listen button {
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  color: orangered;
+  background: none;
+}
+
+.listen-icon {
+  padding-left: 0.9rem;
+}
